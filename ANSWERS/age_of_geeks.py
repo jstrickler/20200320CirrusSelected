@@ -14,6 +14,7 @@ today = datetime.now()
 
 for row in ws['A2:D9']:
     birthday = row[3].value
+    print(type(birthday))
     age = (today - birthday).days // 365
     print(age)
     age_total += age
