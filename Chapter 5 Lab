@@ -1,0 +1,20 @@
+
+
+Chapter 5 Lab
+
+Create a module named "convert"  (ie, convert.py)
+
+In the module create two functions, c2f() and f2c()
+
+Each function takes a number (int or float) and returns a float
+
+NOTE: the functions should not *print* the result, but *return* it.
+
+Then write a separate script called use_convert or something like.
+
+In use_convert.py, import your module and call the functions with various
+arguments.
+
+F = ((9 * C) / 5.0 ) + 32
+C = (F - 32) * (5.0/9)
+
