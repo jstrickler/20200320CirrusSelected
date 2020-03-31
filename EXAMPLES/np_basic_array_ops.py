@@ -40,5 +40,19 @@ s2 = b.sum()  # <6>
 print("sum of a is {0}; sum of b is {1}".format(s1, s2))
 print()
 
+print("a * b:")
+print(a * b, '\n')
+
+print("a @ b:")
+print(a @ b, '\n')
+
+
 a += 1000  # <7>
-print(a)
+print(a, '\n')
+
+def treble(n):
+    return 3 * n # your formula
+
+t = treble(a)
+print(t)
+

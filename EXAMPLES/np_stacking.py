@@ -21,4 +21,12 @@ print()
 print('vstack((a,a[0] + a[1])) =>\n', np.vstack((a, a[0] + a[1])))  # <4>
 print()
 
+c = np.vstack((a, a[0] + a[1]))
+
+print(c, '\n')
+
+
 print('hstack((a,b)) =>\n', np.hstack((a, b)))  # <5>
+
+for value in c.flat:
+    print(value)

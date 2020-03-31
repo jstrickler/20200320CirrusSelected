@@ -16,7 +16,15 @@ print(r3)
 print("size is", r3.size)
 print()
 
-r4 = np.linspace(1.0, 2.0, 10)  # <5>
+r4 = np.linspace(1, 20, 100)  # <5>
 print(r4)
 print("size is", r4.size)
 print()
+
+r4.shape = 20, 5
+
+r5 = np.round(r4, 2).transpose()
+print(r5)
+
+print(np.flip(r5))
+
