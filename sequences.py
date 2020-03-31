@@ -7,3 +7,4 @@ fruits = [
     'BaNaNa', 'Persimmon   '
 ]
 
+#  x.foo().bar()

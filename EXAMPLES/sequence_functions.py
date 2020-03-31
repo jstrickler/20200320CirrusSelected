@@ -16,8 +16,12 @@ for m in sorted(colors):   # <1>
 print()
 
 phrase = ('dog', 'bites', 'man')
-print(" ".join(reversed(phrase)))  # <2>
+r = reversed(phrase)
+print(r)
+print("ONE:", " ".join(r))  # <2>
+print("TWO:", " ".join(r))
 print()
+print(r)
 
 first_names = "Bill Bill Dennis Steve Larry".split()
 last_names = "Gates Joy Richie Jobs Ellison".split()
@@ -28,3 +32,27 @@ print()
 
 for first_name, last_name in full_names:
     print("{} {}".format(first_name, last_name))
+
+full_names = zip(first_names, last_names)  # <3>
+print(list(full_names))
+
+print("looping:")
+for first_name, last_name in full_names:
+    print("{} {}".format(first_name, last_name))
+print()
+
+print(colors)
+
+for i, color in enumerate(colors):
+    print(i, color)
+print()
+
+print(list(enumerate(colors)))
+
+for i, color in enumerate(colors, 1):
+    print(i, color)
+print()
+
+
+
+
