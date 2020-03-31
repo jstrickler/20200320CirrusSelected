@@ -8,7 +8,7 @@ def main():
 
     update_last_names(ws)
 
-    wb.save('presidents3.xlsx')
+    wb.save('../DATA/presidents.xlsx')
 
 def update_last_names(ws):
     """Make the last name column blue and bold"""
