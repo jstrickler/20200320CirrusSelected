@@ -14,6 +14,7 @@ def main():
 
     # returns value for specified cell
     print(ws.cell(row=2, column=3).value, ws.cell(row=2, column=2).value, '\n')
+    print(type(ws.dimensions))
 
 if __name__ == '__main__':
     main()

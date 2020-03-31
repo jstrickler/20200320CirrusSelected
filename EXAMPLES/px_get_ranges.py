@@ -16,6 +16,5 @@ def print_first_and_last_names(ws):
     for row in pres_range:  # row object
         print(row[1].value, row[0].value)
 
-
 if __name__ == '__main__':
     main()
