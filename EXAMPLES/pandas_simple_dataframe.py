@@ -22,9 +22,13 @@ print(indices, '\n')
 print_header('values')
 print(values, '\n')
 
+#                       index labels    column labels
 df = pd.DataFrame(values, index=indices, columns=cols)  # <4>
 print_header('DataFrame df')
 print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])  # <5>
+
+print(df['a':'d'][['alpha','beta']])
+

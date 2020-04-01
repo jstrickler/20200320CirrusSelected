@@ -12,6 +12,8 @@ s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # <3>
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+print(s1['b'], s1['j'], s2[0], s2[9])
+
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # <4>
 
@@ -50,3 +52,19 @@ print(s4.max(), s4.min(), s4.max() - s4.min(), '\n')  # <12>
 s = pd.Series([5, 10, 15], ['a', 'b', 'c'])  # <13>
 print("creating series with index")
 print(s)
+print(s['a'])
+
+
+print(s1.values)
+print(s1)
+
+s3 = pd.Series([20, 40, 60], ['d', 'e', 'f'])
+
+
+print(s1)
+s1['e'] = 24.
+print(s1)
+
+s5 = s1 / 1000
+
+print(s5)
