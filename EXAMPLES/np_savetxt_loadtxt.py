@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import numpy as np
 
+
+
 sample_data = np.loadtxt(   # <1>
     "../DATA/columns_of_numbers.txt",
     skiprows=1,

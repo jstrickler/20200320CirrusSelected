@@ -1,0 +1,9 @@
+steps for installying Jupyter
+
+1. Open a command prompt
+
+2. cd
+     c:\python_training
+
+3. pipenv install jupyter
+
