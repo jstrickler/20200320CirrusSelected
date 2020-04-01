@@ -32,3 +32,21 @@ print(df1 + df2)  # <5>
 
 print_header('df1.add(df2, fill_value=0)')
 print(df1.add(df2, fill_value=0))  # <6>
+print('-' * 60)
+df3 = df1 + df2
+
+print(df3)
+df3[np.isnan(df3)] = -1
+print(df3)
+
+print(df1.columns, '\n')
+print(df1.shape, '\n')
+print(df1.head(2), '\n')
+print(df1.tail(2), '\n')
+print(df1.values, '\n')
+
+print(df1.info(memory_usage="deep"), '\n')
+
+print(df1.describe())
+
+df1.to_csv("junk.csv")

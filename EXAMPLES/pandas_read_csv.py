@@ -10,12 +10,15 @@ airports_df = pd.read_csv('../DATA/airport_boardings.csv', thousands=',', index_
 
 print_header("HEAD OF DATAFRAME")
 
-print(airports_df.head(), "\n")
+print(airports_df.head(10), "\n")
+
+print(airports_df['ATL':'ATL'], '\n')
+
 
 print_header("SELECTED COLUMNS WITH FILTERED ROWS")
 columns_wanted = ['2001 Total', 'Airport']
 sort_col = '2001 Total'
-max_val = 20000000
+max_val = 20_000_000
 selector = airports_df['2001 Total'] > max_val
 selected = airports_df[selector][columns_wanted]
 print(selected)
@@ -29,3 +32,16 @@ print(airports_df[['2001 Total', '2010 Total']].sum(), "\n")
 
 print_header("FIRST FIVE ROWS")
 print(airports_df.iloc[:5])
+
+# select rows through PHX where column name contains "Rank"
+df1 = airports_df.loc[:'PHX',(col for col in airports_df.columns if 'Rank' in col)]
+print(df1)
+
+# select rows where row index starts with 'A'
+df2 = airports_df.loc[(row for row in airports_df.index if row.startswith('A'))]
+print(df2)
+
+#  df.loc[row-selection, col-selection]
+#  row-selection:   "row"  ["row1", "row2", ...]   "row1":"rowN"
+print(airports_df.loc[['ATL', 'ORD', 'PHX', 'IND']])
+
